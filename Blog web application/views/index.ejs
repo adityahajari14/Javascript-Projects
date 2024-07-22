@@ -1,0 +1,24 @@
+<%-include("partials/header.ejs")%>
+<section class="hero">
+    <hr>
+    <h1>THE BLOG</h1>
+    <hr>
+</section>
+<section class="blogpost">
+    <p class="blogpostheading">All blog post</p>
+    <div class="postsgrid">
+        <%locals.blogPost.forEach(element => {%>
+            <a href="/post<%=blogPost.indexOf(element)%>">
+                <div class="post">
+                    <img src="<%=element.imageUrl%>" alt="Post Thumbnail" class="postthumbnail">
+                    <p class="date"><%=element.date%></p>
+                    <h2 class="title"><%=element.title%></h2>
+                    <p class="description"><%=element.description%></p>
+                </div>
+            </a>
+            
+        <%});%>
+    </div>
+</section>
+
+<%-include("partials/footer.ejs")%>

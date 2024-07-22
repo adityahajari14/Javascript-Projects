@@ -1,0 +1,195 @@
+body{
+    background-color: #090D1F;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: block;
+    width: 100%;
+    height: 55px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    float: left;
+    width: 106px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "Inter", sans-serif;
+}
+
+.menucreate{
+    width: 80px;
+    height: 30px;
+    float: right;
+    border-radius: 29px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "Inter", sans-serif;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 200px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hero{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blogpostheading{
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "Inter", sans-serif;
+}
+
+.postsgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 32px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.date{
+    color: #6941C6;
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.title{
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    font-size: 24px;
+
+}
+
+.description{
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+.postthumbnail{
+    width: 100%;
+}
+
+footer{
+    width: 80%;
+    height: 55px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+}
+
+.footermenu{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+
+}
+
+.create{
+    margin-top: 50px;
+    
+}
+
+.create .inputbox {
+    position: relative;
+    width: 60%;
+    height: 50px;
+    margin-bottom: 50px;
+  }
+
+.create .inputbox textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #ffffff;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #ffffff;
+    resize: none;
+  }
+  
+  
+.create .inputbox span {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+    color: #ffffff;
+  }
+  
+.create .inputbox textarea:focus ~ span,
+.create .inputbox textarea:valid ~ span {
+    transform: translateX(-13px) translateY(-35px);
+    font-size: 1em;
+  }
+
+.create .inputbox [type="submit"] {
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border: #fff;
+    width: 50%;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+
+.create #blogtextinput{
+    height: 100px;
+  }
+
+h3{
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+.postpage{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    width: 100%;
+    column-gap: 40px;
+}
+
+.postmainimage{
+    width: 100%;
+}

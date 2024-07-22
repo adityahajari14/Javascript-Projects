@@ -1,0 +1,30 @@
+<%-include("partials/header.ejs")%>
+<section class="postpage">
+    <aside class="recentpost">
+        <h3>Recent blog posts</h3>
+        <div class="recentpostsgrid">
+            <%locals.blogPost.forEach(element => {%>
+                <a href="/post<%=blogPost.indexOf(element)%>">
+                    <div class="post">
+                        <img src="<%=element.imageUrl%>" alt="Post Thumbnail" class="postthumbnail">
+                        <p class="date"><%=element.date%></p>
+                        <h2 class="title"><%=element.title%></h2>
+                        <p class="description"><%=element.description%></p>
+                    </div>
+                </a>
+                
+            <%});%>
+        </div>
+    </aside>
+
+    <section class="blogpost">
+        <p class="date"><%=locals.blogPost[postIndex].date%></p>
+        <h2 class="title"><%=locals.blogPost[postIndex].title%></h2>
+        <img src="<%=locals.blogPost[postIndex].imageUrl%>" alt="Post Thumbnail" class="postmainimage">
+        <p class="description"><%=locals.blogPost[postIndex].blogText%></p>
+    </section>
+</section>
+    
+<%-include("partials/footer.ejs")%>
+
+
